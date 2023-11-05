@@ -1,41 +1,65 @@
 # EcoSim
 
-## Descripción
+**Description:** EcoSim is a forest ecosystem simulation game that teaches players about the importance of conservation. The goal of the game is to maintain the balance of the ecosystem for as long as possible. Players can interact with the ecosystem through a menu of options. The ecosystem is populated by a variety of organisms, including plants, herbivores, carnivores, and fungi. The organisms interact with each other in a realistic way. Players must overcome a series of challenges to maintain the balance of the ecosystem. The game has an educational component that teaches players about the importance of biodiversity, the fragility of ecosystems, and the effects of human activity on ecosystems.
 
-EcoSim es un juego de simulación de ecosistemas que pretende enseñar a los jugadores sobre la importancia de la conservación. En el juego, el jugador controla un ecosistema virtual y debe tomar decisiones para mantener un equilibrio entre especies.
+**Ecosystem type:** Temperate forest
 
-## Objetivo
+**Types of organisms:**
 
-El objetivo del juego es mantener el ecosistema virtual en equilibrio durante el mayor tiempo posible. El jugador puede ganar puntos al completar desafíos y al mantener el ecosistema saludable.
+* Plants
+[Image of Plant]
+* Herbivores
+[Image of Herbivore]
+* Carnivores
+[Image of Carnivore]
+* Fungi
+[Image of Fungi]
 
-## Jugabilidad
+**Types of interactions:**
 
-El juego se juega en un entorno 2D. El jugador puede interactuar con el ecosistema mediante el uso de un menú de opciones. El menú permite al jugador crear nuevos organismos, modificar el entorno y realizar otros cambios.
+* Herbivores eat plants
+* Carnivores eat herbivores
+* Fungi decompose organic matter
 
-## Organismos
+**Types of challenges:**
 
-El ecosistema virtual está poblado por una variedad de organismos, incluidos plantas, animales y hongos. Cada organismo tiene sus propias características y necesidades.
+* Climate events
+* Diseases
+* Predators
+* Human activity
 
-## Entorno
+**Educational component:**
 
-El ecosistema virtual se puede modificar mediante el uso de herramientas y recursos. El jugador puede crear nuevos hábitats, modificar el clima y realizar otros cambios.
+* Information about ecosystems and conservation
+* Interactivity
+* Practical applications
 
-## Desafíos
+**Prompt:**
 
-El juego presenta una serie de desafíos que el jugador debe superar para mantener el ecosistema en equilibrio. Los desafíos pueden incluir eventos climáticos, enfermedades y depredadores.
+> **Create a game that teaches players about the importance of conservation.**
 
-## Conservación
+>
 
-El juego enseña a los jugadores sobre la importancia de la conservación. El jugador debe tomar decisiones que sean beneficiosas para el ecosistema.
+> **The game should:**
 
+>
 
-## Installation and Usage
+> * Be a simulation of an ecosystem
+> * Allow players to make decisions that affect the balance of the ecosystem
+> * Include a educational component that teaches players about ecosystems and conservation
+
+**Additional resources:**
+
+* Website: [website address]
+* Forum: [forum address]
+* Community: [community address]
+
+**Installation and usage:**
 
 To install EcoSim, follow these steps:
 
 1. Clone the GitHub repository:
 
-Utiliza el código con precaución. Más información
 git clone https://github.com/operezol/EcoSim.git
 
 
@@ -49,19 +73,10 @@ npm install
 
 npm start
 
-Additional Resources
-Website: [website address]
-Forum: [forum address]
-Community: [community address]
-Example Content
-The game starts with a simple ecosystem that contains trees, flowers, grasses, and herbivores. The player can create new species, modify the characteristics of existing species, and manipulate the environment.
+How to contribute:
 
-The goal of the game is to maintain the ecosystem balance for a specified period of time. If a species goes extinct, the game ends.
-
-The game has an educational component that teaches players about ecosystems and the importance of conservation.
-
-How to contribute
 This is an open source project and we welcome contributions. If you have any ideas or suggestions, please feel free to open an issue or a pull request.
 
-License
+License:
+
 This project is licensed under the MIT license.
