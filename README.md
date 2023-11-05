@@ -1,68 +1,42 @@
 # EcoSim
 
-**Description:** EcoSim is a realistic, scalable, and modular ecosystem simulation game that teaches players about the importance of conservation. Players can choose to manage an ecosystem of any size, from a small pond to a large forest. They can also create their own custom ecosystems and challenges. EcoSim is accessible to players of all ages and skill levels, and it is available on a variety of platforms.
+**Description:** EcoSim will be a realistic, scalable, and modular ecosystem simulation game that teaches players about the importance of conservation. Players will be able to choose to manage an ecosystem of any size, from a small pond to a large forest. They will also be able to create their own custom ecosystems and challenges. EcoSim will be accessible to players of all ages and skill levels, and it will be available on a variety of platforms.
 
 **Features:**
 
-* Realistic simulation of ecosystem dynamics
-* Scalable ecosystems of any size
-* Modular design allows players to create custom ecosystems and challenges
-* Accessible to players of all ages and skill levels
-* Available on a variety of platforms
-* Multiplayer mode
-* Cooperative mode
-* Leaderboards
-* Educational resources
+* EcoSim will simulate the interactions between different organisms and the environment in a realistic way.
+* EcoSim will allow players to manage ecosystems of any size, from small ponds to large forests.
+* EcoSim will use a modular design that will allow players to create their own custom ecosystems and challenges.
+* EcoSim will be accessible to players of all ages and skill levels.
+* EcoSim will be available on a variety of platforms.
 
-**Goals:**
+**MVP Section**
 
-* Maintain the ecosystem balance for as long as possible
-* Restore a damaged ecosystem
-* Protect a specific species from extinction
-* Increase the biodiversity of an ecosystem
-* Achieve a specific conservation goal
+The MVP (minimum viable product) for EcoSim will include the following features:
 
-**Mechanics:**
+* Core ecosystem simulation mechanics: EcoSim will be able to simulate the interactions between a small set of plants and animals in an ecosystem, including the effects of predation, competition, and reproduction.
+* Basic ecosystem management tools: Players will be able to make basic decisions about how to manage the ecosystem, such as planting trees, building ponds, and hunting predators.
+* A simple goal system: Players will have a set of simple goals to achieve, such as maintaining the ecosystem balance for a certain period of time or protecting a specific species from extinction.
 
-* Players can make decisions about how to manage the ecosystem
-* Players can interact with the environment and the organisms in the ecosystem
-* Players can use resources to build structures and manage habitats
-* Players can research new technologies and conservation methods
-* Players can compete against each other in a multiplayer mode
-* Players can cooperate with each other to achieve common goals
+This MVP will allow us to test the core gameplay mechanics and get feedback from players early in the development process. Once we have a solid foundation, we can start adding more features and complexity to the game.
 
-**Progression:**
+**Modifications for the definition phase**
 
-* Players can unlock new features and abilities as they progress through the game
-* Players can earn rewards for completing challenges and achieving goals
-* Players can track their progress on leaderboards and compare their scores to other players
+Since the game is still in the definition phase, we may need to make some modifications to the MVP features. For example, we may decide to focus on simulating a specific type of ecosystem, such as a pond or a forest. We may also decide to limit the number of features that are available to players in the MVP.
 
-**Engagement:**
-
-* Players can compete against each other in a multiplayer mode
-* Players can cooperate with each other to achieve common goals
-* Players can share their progress and achievements with others on social media
-* Players can learn about ecosystems and conservation through in-game tutorials and educational resources
-
-**Additional ideas:**
-
-* Marketplace for sharing custom ecosystems and challenges
-* Different difficulty levels
-* Scientific model to simulate the interactions between different organisms and the environment
-* Realistic events such as wildfires, droughts, and floods
-* Ability to merge different ecosystems together
+The most important thing is to focus on the core gameplay mechanics and to get feedback from players early and often. This will help us to create a game that is fun and engaging for everyone.
 
 **Conclusion:**
 
-EcoSim is a powerful and versatile ecosystem simulation game that can be used for a variety of purposes, including education, research, and entertainment. It is a valuable tool for anyone who wants to learn more about ecosystems and conservation.
+EcoSim will be a powerful and versatile ecosystem simulation game that can be used for a variety of purposes, including education, research, and entertainment. It will be a valuable tool for anyone who wants to learn more about ecosystems and conservation.
 
 **Where to play:**
 
-[EcoSim game link](https://operezol.github.io/EcoSim)
+EcoSim is not yet available to play, but we will post a link to the game on our website and social media pages once it is ready.
 
 **How to contribute:**
 
-This is an open source project and we welcome contributions. If you have any ideas or suggestions, please feel free to [open an issue](https://github.com/operezol/EcoSim/issues) or [submit a pull request](https://github.com/operezol/EcoSim/pulls).
+This is an open source project and we welcome contributions. If you have any ideas or suggestions, please feel free to open an issue or submit a pull request.
 
 **License:**
 
