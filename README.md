@@ -54,24 +54,9 @@
 * Forum: [forum address]
 * Community: [community address]
 
-**Installation and usage:**
+**Where to play:**
 
-To install EcoSim, follow these steps:
-
-1. Clone the GitHub repository:
-
-git clone https://github.com/operezol/EcoSim.git
-
-
-2. Install the dependencies:
-
-cd EcoSim
-npm install
-
-
-3. Start the game:
-
-npm start
+You can play the game here: https://operezol.github.io/EcoSim
 
 How to contribute:
 
