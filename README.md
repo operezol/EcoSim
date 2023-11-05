@@ -9,6 +9,10 @@
 * Modular design allows players to create custom ecosystems and challenges
 * Accessible to players of all ages and skill levels
 * Available on a variety of platforms
+* Multiplayer mode
+* Cooperative mode
+* Leaderboards
+* Educational resources
 
 **Goals:**
 
@@ -24,6 +28,8 @@
 * Players can interact with the environment and the organisms in the ecosystem
 * Players can use resources to build structures and manage habitats
 * Players can research new technologies and conservation methods
+* Players can compete against each other in a multiplayer mode
+* Players can cooperate with each other to achieve common goals
 
 **Progression:**
 
@@ -40,10 +46,11 @@
 
 **Additional ideas:**
 
-* **Modularity:** Allow players to share their custom ecosystems and challenges with other players through a marketplace.
-* **Accessibility:** Provide different difficulty levels and tutorials and other educational resources.
-* **Realism:** Use a scientific model to simulate the interactions between different organisms and the environment. Include realistic events such as wildfires, droughts, and floods.
-* **Scalability:** Allow players to merge different ecosystems together to create larger and more complex ecosystems.
+* Marketplace for sharing custom ecosystems and challenges
+* Different difficulty levels
+* Scientific model to simulate the interactions between different organisms and the environment
+* Realistic events such as wildfires, droughts, and floods
+* Ability to merge different ecosystems together
 
 **Conclusion:**
 
@@ -51,11 +58,11 @@ EcoSim is a powerful and versatile ecosystem simulation game that can be used fo
 
 **Where to play:**
 
-You can play the game here: https://operezol.github.io/EcoSim
+[EcoSim game link](https://operezol.github.io/EcoSim)
 
 **How to contribute:**
 
-This is an open source project and we welcome contributions. If you have any ideas or suggestions, please feel free to open an issue or a pull request.
+This is an open source project and we welcome contributions. If you have any ideas or suggestions, please feel free to [open an issue](https://github.com/operezol/EcoSim/issues) or [submit a pull request](https://github.com/operezol/EcoSim/pulls).
 
 **License:**
 
