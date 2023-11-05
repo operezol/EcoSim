@@ -1,6 +1,7 @@
 # EcoSim
 
-EcoSim is an ecosystem simulation game that aims to teach players about the importance of conservation. In the game, the player controls a virtual ecosystem and must make decisions to maintain a balance between species.
+EcoSim is an ecosystem simulation game that aims to teach players about the importance of conservation. 
+In the game, the player controls a virtual ecosystem and must make decisions to maintain a balance between species.
 
 ## Features
 
