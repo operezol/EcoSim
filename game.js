@@ -23,11 +23,6 @@ class MyGameScene extends Phaser.Scene {
       width: '100%',
       height: '100%'
     },
-    render: {
-      antialias: false,
-      pixelArt: true,
-      roundPixels: true
-    },
     scene: MyGameScene});
 
   game.start();
