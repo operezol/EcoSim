@@ -13,18 +13,21 @@ class MyGameScene extends Phaser.Scene {
   }
 
   var game = new Phaser.Game({
-    width: window.innerWidth,
-    height: window.innerHeight,
-    canvas: 'game-canvas',
-    scene: MyGameScene,
-    renderType: Phaser.CANVAS,
-    scale:{
+    width: "100%",
+    height: "100%",
+    type: Phaser.AUTO,
+    scale: {
       mode: Phaser.Scale.FIT,
       autoCenter: Phaser.Scale.CENTER_BOTH,
       width: '100%',
       height: '100%'
-    }
-  });
+    },
+    render: {
+      antialias: false,
+      pixelArt: true,
+      roundPixels: true
+    },
+    scene: MyGameScene});
 
   game.start();
 
