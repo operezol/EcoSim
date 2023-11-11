@@ -17,7 +17,7 @@ class MyGameScene extends Phaser.Scene {
     height: window.innerHeight,
     canvas: 'game-canvas',
     scene: MyGameScene,
-    type: Phaser.AUTO,
+    renderType: Phaser.AUTO,
     scale:{
       mode: Phaser.Scale.FIT,
       autoCenter: Phaser.Scale.CENTER_BOTH,
