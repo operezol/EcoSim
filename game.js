@@ -23,8 +23,8 @@ class MyGameScene extends Phaser.Scene {
       fullScreenTarget: 'game-canvas'
     }
   });
-  
-  new ScaleManager(game);
+
+  new Phaser.ScaleManager(game);
 
   game.start();
 
