@@ -9,7 +9,10 @@ class MyGameScene extends Phaser.Scene {
 
   create() {
     this.text = this.add.text(100, 100, 'Hello, world!');
-    this.text.setColor('#ffffff');
+    this.text.setColor('white');
+    this.text.setFontFamily('Arial');
+    this.text.setFontSize(24);
+    
   }
 }
 
