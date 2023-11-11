@@ -19,8 +19,7 @@ class MyGameScene extends Phaser.Scene {
     scene: MyGameScene,
     renderType: Phaser.AUTO
   });
-
+  game.start();
   game.scale.scaleMode = Phaser.ScaleManager.RESIZE;
   game.scale.fullScreenTarget = 'game-canvas';
 
-  game.start();
