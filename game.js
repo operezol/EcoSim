@@ -24,7 +24,5 @@ class MyGameScene extends Phaser.Scene {
     }
   });
 
-  new Phaser.ScaleManager(game);
-
   game.start();
 
