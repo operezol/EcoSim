@@ -17,10 +17,12 @@ class MyGameScene extends Phaser.Scene {
     height: window.innerHeight,
     canvas: 'game-canvas',
     scene: MyGameScene,
-    renderType: Phaser.AUTO,
+    type: Phaser.AUTO,
     scale:{
       mode: Phaser.Scale.FIT,
-      fullScreenTarget: 'game-canvas'
+      autoCenter: Phaser.Scale.CENTER_BOTH,
+      width: '100%',
+      height: '100%'
     }
   });
 
