@@ -16,6 +16,7 @@ class MyGameScene extends Phaser.Scene {
     width: "100%",
     height: "100%",
     type: Phaser.AUTO,
+    customEnvironment: false,
     scale: {
       mode: Phaser.Scale.FIT,
       autoCenter: Phaser.Scale.CENTER_BOTH,
