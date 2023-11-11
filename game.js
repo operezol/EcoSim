@@ -17,9 +17,14 @@ class MyGameScene extends Phaser.Scene {
     height: window.innerHeight,
     canvas: 'game-canvas',
     scene: MyGameScene,
-    renderType: Phaser.AUTO
+    renderType: Phaser.AUTO,
+    scale:{
+      mode: Phaser.Scale.FIT,
+      fullScreenTarget: 'game-canvas'
+    }
   });
+  
+  new ScaleManager(game);
+
   game.start();
-  game.scale.scaleMode = Phaser.ScaleManager.RESIZE;
-  game.scale.fullScreenTarget = 'game-canvas';
 
