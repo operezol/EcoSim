@@ -1,41 +1,39 @@
-let depthMap = [];
 let widthUnit = 0;
 let heightUnit = 0;
 let canvasWidth = 0;
 let canvasHeight = 0;
-const smoothLevel = 5;
+const smoothDepthLevel = 1;
+const smoothDepthRadius = 1;
+const rainLevel = 100;
+const boardMap = [];
 
-function populateDepthMap() {
+function populateBoardMap() {
   for (let i = 0; i < 100; i++) {
     const row = [];
     for (let j = 0; j < 100; j++) {
-      row.push(Math.floor(Math.random() * 256));
+      row.push({ depth: Math.floor(Math.random() * 256), waterLevel: 0 });
     }
-    depthMap.push(row);
+    boardMap.push(row);
   }
-
-}  
+}
 
 function smoothMap() {
-  for (let i = 0; i < depthMap.length; i++) {
-    for (let j = 0; j < depthMap[i].length; j++) {
-      const value = depthMap[i][j];
-      if (value < 255) {
-        const surroundingValues = getSurroundingValues(i, j);
-        const smoothedValue = calculateSmoothedValue(surroundingValues);
-        depthMap[i][j] = smoothedValue;
-      }
+  for (let i = 0; i < boardMap.length; i++) {
+    for (let j = 0; j < boardMap[i].length; j++) {
+      const value = boardMap[i][j].depth;
+      const surroundingValues = getSurroundingValues(i, j);
+      const smoothedValue = calculateSmoothedValue(surroundingValues);
+      boardMap[i][j].depth = smoothedValue;
     }
   }
-
 }
 
 function getSurroundingValues(i, j) {
   const surroundingValues = [];
-  for (let x = i - 1; x <= i + 1; x++) {
-    for (let y = j - 1; y <= j + 1; y++) {
-      if (x >= 0 && x < depthMap.length && y >= 0 && y < depthMap[x].length) {
-        surroundingValues.push(depthMap[x][y]);
+  for (let x = i - smoothDepthRadius; x <= i + smoothDepthRadius; x++) {
+    for (let y = j - smoothDepthRadius; y <= j + smoothDepthRadius; y++) {
+      if (x >= 0 && x < boardMap.length && y >= 0 && y < boardMap[x].length) {
+        surroundingValues.push(boardMap[x][y].depth);
       }
     }
   }
@@ -50,10 +48,22 @@ function calculateSmoothedValue(surroundingValues) {
   return Math.round(sum / surroundingValues.length);
 }
 
+const rain = () => {
+  for (let i = 0; i < rainLevel; i++) {
+    const firstNum = Math.floor(Math.random() * 100);
+    const secondNum = Math.floor(Math.random() * 100);
+    boardMap[firstNum][secondNum].waterLevel += 1;
+  }
+};
+
 const renderMap = () => {
-  for (let i = 0; i < depthMap.length; i++) {
-    for (let j = 0; j < depthMap[i].length; j++) {
-      fill(depthMap[i][j]);
+  for (let i = 0; i < boardMap.length; i++) {
+    for (let j = 0; j < boardMap[i].length; j++) {
+      if (boardMap[i][j].waterLevel > 0) {
+        fill(boardMap[i][j].depth, boardMap[i][j].depth, 255);
+      } else {
+        fill(boardMap[i][j].depth);
+      }
       noStroke();
       rect(j * widthUnit, i * heightUnit, widthUnit, heightUnit);
     }
@@ -66,13 +76,14 @@ function setup() {
   heightUnit = Math.floor(windowHeight / 100);
   canvasHeight = heightUnit * 100;
   createCanvas(canvasWidth, canvasHeight);
-  populateDepthMap();
-  for (let index = 0; index < smoothLevel; index++) {
+  populateBoardMap();
+  for (let index = 0; index < smoothDepthLevel; index++) {
     smoothMap();
   }
 }
 
 function draw() {
   background(0);
+  rain();
   renderMap();
 }
