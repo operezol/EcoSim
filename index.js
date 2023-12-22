@@ -2,15 +2,16 @@ let widthUnit = 0;
 let heightUnit = 0;
 let canvasWidth = 0;
 let canvasHeight = 0;
+const canvasDivision = 100;
 const smoothDepthLevel = 1;
 const smoothDepthRadius = 1;
 const rainLevel = 100;
 const boardMap = [];
 
 function populateBoardMap() {
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < canvasDivision; i++) {
     const row = [];
-    for (let j = 0; j < 100; j++) {
+    for (let j = 0; j < canvasDivision; j++) {
       row.push({ depth: Math.floor(Math.random() * 256), waterLevel: 0 });
     }
     boardMap.push(row);
@@ -50,8 +51,8 @@ function calculateSmoothedValue(surroundingValues) {
 
 const rain = () => {
   for (let i = 0; i < rainLevel; i++) {
-    const firstNum = Math.floor(Math.random() * 100);
-    const secondNum = Math.floor(Math.random() * 100);
+    const firstNum = Math.floor(Math.random() * canvasDivision);
+    const secondNum = Math.floor(Math.random() * canvasDivision);
     boardMap[firstNum][secondNum].waterLevel += 1;
   }
 };
@@ -60,7 +61,11 @@ const renderMap = () => {
   for (let i = 0; i < boardMap.length; i++) {
     for (let j = 0; j < boardMap[i].length; j++) {
       if (boardMap[i][j].waterLevel > 0) {
-        fill(boardMap[i][j].depth, boardMap[i][j].depth, 255);
+        fill(
+          boardMap[i][j].depth + boardMap[i][j].waterLevel,
+          boardMap[i][j].depth + boardMap[i][j].waterLevel,
+          255
+        );
       } else {
         fill(boardMap[i][j].depth);
       }
@@ -71,10 +76,15 @@ const renderMap = () => {
 };
 
 function setup() {
-  widthUnit = Math.floor(windowWidth / 100);
-  canvasWidth = widthUnit * 100;
-  heightUnit = Math.floor(windowHeight / 100);
-  canvasHeight = heightUnit * 100;
+  if (windowWidth > windowHeight) {
+    windowWidth = windowHeight;
+  } else {
+    windowHeight = windowWidth;
+  }
+  widthUnit = Math.floor(windowWidth / canvasDivision);
+  canvasWidth = widthUnit * canvasDivision;
+  heightUnit = Math.floor(windowHeight / canvasDivision);
+  canvasHeight = heightUnit * canvasDivision;
   createCanvas(canvasWidth, canvasHeight);
   populateBoardMap();
   for (let index = 0; index < smoothDepthLevel; index++) {
